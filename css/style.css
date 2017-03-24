@@ -1,0 +1,860 @@
+/*logo*/
+.container>.navbar-header p{
+    padding:15px 15px;
+}
+/*导航整体*/
+.navbar{
+    margin-bottom: 0;
+}
+/*导航菜单高度*/
+.navbar-default .navbar-nav li a{
+    height: 70px;
+    line-height: 40px;
+    }
+.navbar-default .navbar-nav li:hover a{
+    color:#fff;
+    background: #2c99ea;
+}
+.navbar-right{
+        margin-right: -40px;
+    }
+/*.nav-sy li a span{
+    color: #2c99ea;
+}
+.nav-sy li:hover a span{
+    color:#fff;
+}*/
+
+/*轮播*/
+/*图片中间文字整体*/
+.dtlb{
+    padding-right: 0px; 
+    padding-left: 0px; 
+}
+.carousel-caption{
+    bottom:-20px;
+}
+.carousel-caption h3{
+    font-size: 60px;
+    font-weight: 400;
+}
+.carousel-caption .lead{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+/*图片中间下载按钮*/
+.carousel-caption .btn-default{
+    background: transparent;
+    border:1px solid #fff;
+    color: #fff;
+    width: 225px;
+    margin:35px auto 45px;
+}
+.carousel-caption .btn-default:hover{
+    background: rgba(255,255,255,0.3)
+}
+/*图片中间数据*/
+.carousel-caption ul{
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    height: 150px;
+    padding:10px ;
+}
+.carousel-caption ul li{
+    width: 30%;
+    height: 130px;
+    border-right: 1px solid #fff;
+}
+.carousel-caption ul li:nth-child(3){
+    border-right:0 ;
+}
+.carousel-caption ul li span{
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 微软雅黑;
+}
+.carousel-caption p:nth-child(5){
+        font-size: 12px;
+    }
+
+
+/* 首页建站案列 */
+.casediv{
+    width: 100%;
+    height: 560px;
+    background: #f2f2f2;
+}
+.case{
+    margin-top: 80px;
+    width: 1300px;
+    height: 560px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    
+
+}
+/*.case .thumbnail{
+    border:0;
+}*/
+.case div:nth-child(3){
+    position: absolute;
+    bottom:430px;
+}
+.case div:nth-child(4){
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.case div:nth-child(4) p{
+    float: left;
+}
+.case div:nth-child(4) p a{
+    margin-left: 10px;
+    border-radius: 0;
+    border-color: #000;
+    height: 50px;
+}
+.case .left a{
+    width: 50px;
+    font-size: 26px;
+}
+.case div:nth-child(4) p:nth-child(2) a{
+    width: 280px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.case div:nth-child(4) p:nth-child(1){
+    margin-left: 30%;
+}
+
+/*js左右滚动样式*/
+.case li a{
+    color: #333;
+    text-decoration: none;
+}
+.list{
+    width: 3900px;
+    position: absolute;
+    left:0px;
+    overflow: hidden;
+}
+.list li{
+    width: 408px;
+    float: left;
+    margin:0 9px;
+    list-style: none;
+}
+.case .container{
+    position: absolute;
+    bottom: 0px;
+}
+/*首页的什么是旅烨CMS*/
+.wt{
+    background: #2598e7 url('../images/index-md.png') no-repeat center center/100% 100%;
+    width: 100%;
+    height: 275px;
+    margin:80px auto;
+    color: #fff;
+    padding-top: 80px;
+}
+.wt p{
+    margin-top: 45px;
+}
+/*首页的旅烨CMS特点*/
+.td .row{
+    margin:80px auto;
+}
+.td .row .thumbnail,.ky .row .thumbnail{
+    border:0;
+}
+.td .row>div{
+    margin-left: 30px;
+}
+/* 首页的新建站网站*/
+.xjz .img-txt{
+    margin-top: 100px;
+}
+.xjz .img-txt  .link{
+    margin:40px auto;
+    display: block;
+    color: #66b8f7;
+    font-size: 20px;
+}
+/*.xjz .img-txt p{
+    width: 495px;
+}*/
+.xjz .img-txt div .left,.xjz .img-txt div .right{
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 0;
+    border-color: #000;
+    margin-top: 290px;
+}
+.xjz .more,.help .more{
+    width: 300px;
+    height: 50px;
+    margin-top: 90px;
+    font-size: 20px;
+    border-radius: 0;
+    border-color: #000;
+}
+/*<!-- 首页的服务帮助 -->*/
+.help{
+    margin-top: 200px;
+    background: #f6f6f6;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.help .left .row{
+    margin-top: 50px;
+    padding-top:20px;
+    color:#747474; 
+    background: #fff;
+    padding-bottom: 10px;
+}
+.help .left .row:nth-child(1){
+    margin-top: 60px;
+}
+.help .left .row>p{
+    border-right: 1px solid #ccc;
+}
+.help .left .row p .num {
+    font-size: 24px;
+    font-weight:900;
+    color: #747474;
+}
+.help .left .row div p:nth-child(1){
+    color: #398edf;
+    font-size: 20px;
+}
+.help .left .row div p:nth-child(1) span{
+    color: #989898;
+    float: right;
+    display: inline-block;
+    font-size: 14px
+}
+.help .right{
+    background: #fff;
+    margin-top: 60px;
+    padding-bottom: 25px;
+    padding-left:45px;
+    padding-right:45px;
+}
+.help .right .row:nth-child(1) h1{
+    font-size: 30px;
+}
+.help .right .row{
+    border-bottom: 1px solid #ccc;
+    color:#747474; 
+}
+.help .right .row .h1 a{
+    height: 40px;
+    padding-bottom: 8px;
+    color: #333;
+}
+.help .right .row .h1 a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid red;
+}
+
+.help .right .row p:nth-child(1){
+    font-size: 20px;
+    color: #398edf;
+    margin-top: 25px;
+}
+
+/*<!-- 首页的友情链接 -->*/
+.link-f{
+    height: 200px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+.link-f h1{
+    margin-bottom: 90px;
+}
+/*<!所有页面的底部 -->*/
+.footer{
+    background: #3f8de8;
+    color: #fff;
+    font-weight: 700;
+}
+.footer .container{
+    margin:100px auto 0px;
+    padding-bottom: 100px;
+}
+.footer-dl{
+    background: #fff;
+    color:#666;
+}
+.footer .left{
+    margin-top: 95px;
+}
+.footer .middle,.footer .right{
+    margin-top: 90px;
+}
+
+
+
+/*第二张网页cms旅烨云特点*/
+.header{
+    background: url('../images/02-cms-head.png') no-repeat center center/100% 100%;
+    height: 510px;
+    color: #fff;
+}
+.header-dl{
+    position: relative;
+    height: 678px;
+    background: url('../images/cms-header.png') no-repeat center center/100% 100%;
+}
+.header-5,.header1{
+    background: url('../images/05-cms-hd.png') no-repeat center center/100% 100%;
+}
+.header h3{
+    margin-top: 165px;
+    font-size: 60px;
+}
+.header .lead{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.header .btn-default{
+    background: transparent;
+    border:1px solid #fff;
+    color: #fff;
+    width: 225px;
+    margin:20px auto;
+}
+.header .btn-default:hover{
+    background: rgba(255,255,255,0.3)
+}
+.middle .row{
+    margin-top: 160px;
+}
+.middle .row .h3{
+    margin-top: 140px;
+    color: #333；
+}
+.middle .row p{
+    color: #666;
+}
+
+.ky{
+    margin-top: 190px;
+}
+
+/*第三张建站案列样式*/
+.header1 h3{
+    margin-top: 130px;
+    font-size: 60px;
+}
+.ym li{
+    margin-left: 20px;
+    display: inline-block;
+    
+}
+.ym li a{
+    color: #333;
+    border-color: #333;
+    
+}
+.ym li a:hover{
+    background:#4385f5 ;
+    color: #fff; 
+}
+
+/*登陆页面*/
+.header-dl .form{
+    width: 350px;
+    height: 330px;
+    border-radius: 3px;
+    position: absolute;
+    top:140px;
+    right: 20%;
+    background: #fff;
+}
+.header-dl .form .checkbox a{
+    color: #333;
+}
+.header-dl .form .checkbox a:hover{
+    color: #2c99ea;
+    text-decoration: none;
+}
+.header-dl .form .checkbox .ck-a2{
+    margin-left: 10px;
+}
+.header-dl .form .form-group,.form .checkbox{
+    width:280px;
+    height: 40px;
+    margin:24px auto;
+}
+.header-dl .form button{
+    width:280px;
+    height: 40px;
+    margin:0 auto;
+}
+
+
+/*第五张服务帮助页面*/
+.header-5 .form .form-group .input-group-addon{
+   background: #1f9bf7;
+   color: #fff;
+}
+.main{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.main .title{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 60px;
+}
+/*.main .left .dropdown botton{
+    border-radius: 0px;
+    border-left: 3px solid #2c99ea;
+    margin-top: 20px;
+}
+.main .left .dropdown botton:hover{
+    
+    color: #2c99ea;
+}
+
+
+.main .left .dropdown ul{
+    border:0;
+    box-shadow: 0 0;
+}
+.main .left .dropdown ul li .a:hover{
+    color: #2c99ea;
+    text-decoration: underline;
+}*/
+/*下拉菜单内容*/
+.main .left .panel-group .panel .panel-heading{
+    border-left: 3px solid #2c99ea;
+    text-decoration: none; 
+}
+.main .left .panel-group .panel .panel-heading a{
+    display: block;
+}
+.main .left .panel-group .panel .panel-heading a:hover
+{
+    color: #2c99ea;
+    text-decoration: none; 
+}
+.main .left .panel-group .panel div:nth-child(2) div{
+    border:0;
+    padding-left: 30px;
+}
+.main .left .panel-group .panel div:nth-child(2) div a:hover{
+    color: #2c99ea;
+}
+
+/*右边安装等各项说明*/
+.main .right div:nth-child(3){
+    padding-top: 10px;
+    height: 45px;
+    border-top:1px dashed  #ccc; 
+    border-bottom:1px dashed  #ccc;
+}
+.main .right div:nth-child(3) span:nth-child(1){
+    text-align: right:    
+}
+.main .right div:nth-child(4){
+    line-height: 40px;
+}
+.main .right .text-img5{
+    margin-top: 40px;
+}
+.main .right .text-img5 img{
+    margin-top: 45px;
+}
+.main .right .text{
+    margin-top: 30px;
+    line-height: 20px;
+}
+.main .right div:nth-child(13) p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.main .right div:nth-child(13) p a:hover{
+    text-decoration: none;
+}
+
+
+
+/*媒体查询1*/
+@media (max-width: 768px){
+    /*导航*/
+    .navbar-default .navbar-nav li a{
+    height: 30px;
+    line-height:10px;
+    }
+
+    /*轮播*/
+    /*图片中间文字整体*/
+    .carousel-caption{
+        bottom:35px;
+    }
+    .carousel-caption h3{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .carousel-caption .lead{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    /*轮播下载按钮*/
+    .carousel-caption .btn-default{
+    font-size: 10px;
+    height: 30px;
+    line-height: 5px;
+    width: 100px;
+    margin:0px auto;
+    }
+    /*首页建站案列*/
+    .case .container .left a{
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    border-radius: 0;
+    border-color: #000;
+    }
+    .case .container p a{
+        width: 100px;
+    }
+    /*首页新建站网站左右箭头*/
+    .xjz .img-txt div .left,.xjz .img-txt div .right{
+    margin-top: 50px;
+    }
+    /*友情链接*/
+    .link-f h1 {
+    margin-bottom: 20px;
+    }
+    /*<!-- all底部 -->*/
+    .footer{
+        background: #3f8de8;
+        color: #fff;
+        font-weight: 300;
+    }
+    .footer .container{
+        margin:30px auto 0px;
+        padding-bottom: 30px;
+    }
+    .footer .left{
+        margin-top: 30px;
+    }
+    .footer .middle,.footer .right{
+        margin-top: 25px;
+    }
+    .footer-dl{
+    background: #fff;
+    color:#666;
+    }
+
+    /*服务帮助页面*/
+    .main .right div:nth-child(3){
+    height: 75px;
+    text-align: center;
+    }
+
+  /*  cms特点页面*/
+  .middle .row .h3 {
+    margin-top: 50px;
+    }
+    .middle .row {
+    margin-top: 60px;
+    }
+    .td .row>div {
+    margin-left: 0px;
+    }
+    /*建站案例页码*/
+
+    .ym li{
+    margin-left: 10px;
+    display: inline-block;
+    }
+}
+
+/*媒体查询2*/
+@media (min-width: 300px) and (max-width:500px){
+    /*轮播*/
+    /*图片中间文字整体*/
+    .carousel-caption{
+        bottom:-10px;
+    }
+    .carousel-caption h3{
+        font-size: 20px;
+        margin-bottom:0px; 
+        font-weight: 300;
+    }
+    .carousel-caption .lead{
+        font-size: 10px;
+        margin-bottom: 0px
+    }
+    /*轮播下载按钮*/
+    .carousel-caption .btn-default{
+    font-size: 10px;
+    height: 20px;
+    line-height: 0px;
+    width: 76px;
+    margin:0px auto;
+    }
+    .carousel-caption p:nth-child(5){
+        font-size: 10px;
+    }
+    /*新建站网站*/
+    .xjz .img-txt {
+    margin-top: 50px;
+    }
+
+   /* 服务帮助*/
+    .help {
+    margin-top: 60px;
+    }
+    .xjz .more, .help .more {
+    margin-top: 50px;
+    }
+    /*友情链接*/
+    .link-f {
+    height: 120px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    }
+    .link-f h1 {
+    margin-bottom: 20px;
+    }
+    /*<!-- 底部 -->*/
+    .footer{
+        background: #3f8de8;
+        color: #fff;
+        font-weight: 300;
+    }
+    .footer .container{
+        margin:30px auto 0px;
+        padding-bottom: 30px;
+    }
+    .footer .left{
+        margin-top: 30px;
+    }
+    .footer .middle,.footer .right{
+        margin-top: 25px;
+    }
+  /*  cms云忒点页面*/
+  .header h3 {
+    font-size: 30px;
+    }
+    .header .lead {
+    font-size: 20px;
+    }
+  .middle .row {
+    margin-top: 0px;
+    }
+    .middle .row .h3 {
+    margin-top: 50px;
+    }
+    .ky {
+    margin-top: 60px;
+    }
+    /*登陆*/
+    .footer-dl{
+    background: #fff;
+    color:#666;
+    }
+    .header-dl .form {
+    width: 310px;
+    position: absolute;
+    right: 2%;
+    }
+    /*服务帮助页面*/
+    .main .right div:nth-child(3){
+    height: 75px;
+    text-align: center;
+    }
+}
+
+/*媒体查询3*/
+@media (min-width: 768px) and (max-width:900px){
+    /*轮播*/
+    .carousel-caption h3{
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .carousel-caption .lead{
+        font-size: 20px;
+        margin-bottom: 0px
+    }
+    /*轮播下载按钮*/
+    .carousel-caption .btn-default{
+    border: 1px solid #fff;
+    color: #fff;
+    width: 225px;
+    margin: 10px auto 19px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width:1000px){
+    /*友情链接*/
+    .link-f h1 {
+    margin-bottom: 15px;
+    }
+}
+
+/*媒体查询4*/
+@media (min-width: 768px) and (max-width:1200px){
+
+    /*<!-- 底部 -->*/
+    .footer .container{
+        margin:30px auto 0px;
+        padding-bottom: 30px;
+    }
+    .footer .left{
+        margin-top: 30px;
+    }
+    .footer .middle,.footer .right{
+        margin-top: 25px;
+    }
+    .footer-dl{
+    background: #fff;
+    color:#666;
+    }
+    /*首页特点的五个图*/
+    .td .row>div {
+    margin-left: 0px;
+    }
+
+    
+}
+
+@media (min-width: 870px) and (max-width:1300px){
+    /*动态滑行*/
+    .case{
+    width: 870px;
+    }
+
+    /*js左右滚动样式*/
+    .case li a{
+        color: #333;
+        text-decoration: none;
+    }
+    .list{
+        width: 2610px;
+        position: absolute;
+        overflow: hidden;
+        left: 0px;
+    }
+    .list li{
+        width: 270px;
+        float: left;
+        margin:0 9px;
+        list-style: none;
+    }
+    .list li:nth-child(1){
+        margin-left: -20px;
+    }
+}
+@media (min-width: 400px) and (max-width:869px){
+    .case{
+    width: 400px;
+    }
+    .case div:nth-child(4) p a {
+    width: 60px;
+    }
+    
+    /*js左右滚动样式*/
+    .case li a{
+        color: #333;
+        text-decoration: none;
+    }
+    .list{
+        width: 1800px;
+        position: absolute;
+        overflow: hidden;
+        left: 0px;
+    }
+    .list li{
+        width: 200px;
+        float: left;
+        margin:0 -2px;
+        list-style: none;
+    }
+    .list li:nth-child(1){
+        margin-left: -20px;
+    }
+    
+    /*查看更多*/
+    .case div:nth-child(4){
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    }
+    .case div:nth-child(4) p{
+        float: left;
+    }
+    .case .left a{
+        width: 30px;
+        font-size: 26px;
+    }
+    .case div:nth-child(4) p:nth-child(2) a{
+        width: 100px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .case div:nth-child(4) p:nth-child(1){
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 320px) and (max-width:399px){
+    .case{
+    width: 320px;
+    }
+
+    /*js左右滚动样式*/
+    .case li a{
+        color: #333;
+        text-decoration: none;
+    }
+    .list{
+        width: 2880px;
+        position: absolute;
+        overflow: hidden;
+        left: 0px;
+    }
+    .list li{
+        width: 320px;
+        float: left;
+        margin:0 -2px;
+        list-style: none;
+    }
+    .list li:nth-child(1){
+        margin-left: -38px;
+    }
+
+    .case div:nth-child(4){
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    }
+    .case div:nth-child(4) p{
+        float: left;
+    }
+    .case div:nth-child(4) p a{
+        margin-left: 10px;
+        border-radius: 0;
+        border-color: #000;
+        height: 50px;
+    }
+    .case .left a{
+        width: 50px;
+        font-size: 26px;
+    }
+    .case div:nth-child(4) p:nth-child(2) a{
+        width: 100px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .case div:nth-child(4) p:nth-child(1){
+        margin-left: 15%;
+    }
+}

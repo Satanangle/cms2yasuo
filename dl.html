@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>登陆</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css"><!-- 自己的 -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+            <!-- 导航 -->
+<nav class="navbar navbar-default " role="navigation" style="border:0;">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header col-lg-2">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <p class="navbar-brand "><img src="images/logo.png"></p>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-sy">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="td.html">cms特点</a></li>
+        <li><a href="#">插件扩展</a></li>
+        <li><a href="jianzhan.html">建站案列</a></li>
+        <li><a href="fuhelp.html">服务帮助</a></li>
+        <li><a href="#">论坛交流</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>登陆</a></li> 
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- 顶部图片 -->
+
+<div class="container-fluid header-dl">
+    <form class="form" role="form" onsubmit="return box()">
+        <h4 class="h4" style="padding-left:30px;margin:30px auto 20px"><strong>账户登陆</strong></h4>
+        <div class="form-group">
+            <div class="input-group" >
+              <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+              <input class="form-control zh" type="email" placeholder="用户名">
+            </div><span class="tips1">请输入邮箱账户</span>
+        </div>
+        <div class="form-group dl-ipt2">
+            <div class="input-group">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-comment"></span></div>
+              <input class="form-control mm" type="password" placeholder="密码">
+            </div><span class="tips2">请输入密码</span>
+        </div>
+        <div class="checkbox">
+            <label >
+              <input type="checkbox" checked="checked" >记住密码
+            </label>
+            <a href="#" class="col-lg-offset-3 col-sm-offset-3 col-xs-offset-3">忘记密码</a><a href="#" class="ck-a2">立即注册</a>
+        </div>
+        <div class="form-group"><button type="submit" class="btn btn-primary ">登陆</button></div>
+        
+    </form>
+</div>
+<!--   表单验证 -->
+<script >
+    $('.header-dl .form .form-group .zh').on('focus',function(){
+        $('.header-dl .form .form-group .tips1').html('请输入账号').css({color:'blue'})
+    });
+    $('.header-dl .form .form-group .zh').on('blur',function(){
+        var a=$('.header-dl .form .form-group .zh').val();
+        var re=/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
+        // /^1[3|4|5|7|8][0-9]\d{8}$/;电话正则
+        if(a==""){
+            $('.header-dl .form .form-group .tips1').html('帐户不能为空').css({color:'red'});
+            $('.header-dl .form .form-group .zh').css({borderColor:'red'});
+            return false;
+        }else{
+            if(!re.test(a)){
+            $('.tips1').html('请输入正确的邮箱！').css({color:'red'});
+            $('.header-dl .form .form-group .zh').css({borderColor:'red'});
+            return false;
+            }
+            else{
+            $('.tips1').html('账户可使用！').css({color:'green'});
+            return true;
+            }
+        } 
+    });
+
+
+    $('.header-dl .form .form-group .mm').on('focus',function(){
+            $('.tips2').html('请输入密码').css({color:'blue'});
+    });
+
+
+    $('.header-dl .form .form-group .mm').on('blur',function(){
+        var b=$('.header-dl .form .form-group .mm').val();
+        var re=/\d{6,20}/;
+        if(b==""){
+            $('.tips2').html('密码不能为空！').css({color:'red'});
+            $('.header-dl .form .form-group .mm').css({borderColor:'red'});
+            return false;
+        }else{
+            if(!re.test(b)){
+            $('.tips2').html('请输入6-20位数字字母组合密码！').css({color:'red'});
+            $('.header-dl .form .form-group .mm').css({borderColor:'red'});
+            return false;
+            }
+            else{
+            $('.tips2').html('密码正确！').css({color:'green'});
+            return true;
+            }
+        }
+    });
+
+    function box(){
+        var flag_mm=$('.header-dl .form .form-group .mm').blur();
+        var flag_zh=$('.header-dl .form .form-group .zh').blur();
+        if(flag_mm==true&&flag_zh==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+</script>
+
+
+<!-- 底部 -->
+<div class="footer footer-dl" >
+    <div class="container">
+        <div class="col-lg-4  col-xs-12 left">
+            <div><img src="images/cms-footlg.png"></div>
+            <p>Copyright © 2012 - 2016 LvyeCMS All Right Reserved.</p>
+        </div>
+        <div class="col-lg-5  col-xs-12 middle">
+            <ul class="col-lg-4 col-sm-4 col-xs-4 list-unstyled">
+                <li><h4>开始</h4></li>
+                <li>注册账号</li>
+                <li>免费使用</li>
+            </ul>
+            <ul class="col-lg-4  col-sm-4 col-xs-4 list-unstyled">
+                <li><h4>服务</h4></li>
+                <li>如何使用</li>
+                <li>教授</li>
+            </ul>
+            <ul class="col-lg-4 col-sm-4 col-xs-4 list-unstyled">
+                <li><h4>关于</h4></li>
+                <li>联系我们</li>
+                <li>博客</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-xs-12 right">分享
+        <span><img src="images/cms-wb.png" ></span>
+        <span><img src="images/cms-wx.png" ></span>
+        <span><img src="images/cms-qq.png" ></span>
+        <span><img src="images/cms-fx.png" ></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
